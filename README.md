@@ -1,12 +1,12 @@
 # Android-7.1.1-fails-to-play-.ts-audio
 
 Steps to reproduce .ts audio playback failure bug:
-1. install IntegrationTest.apk
-2. copy and unzip testSingals.tar.gz to /sdcard/dolby/integrationtest/
+1. install IntegrationTest.apk on your Android 7.1.1 device
+2. copy and unzip testSingals.tar.gz to device directory /sdcard/dolby/integrationtest/
 3. launch "Integration Test" APP on Android 7.1.1
-4. click Audio(OpenMAX-AL Buffer Player) -> 2 channel DD audio(TS)
+4. click Audio(OpenMAX-AL Buffer Player) --> 2 channel DD audio(TS) to start playing .ts audio file
 
-Check the Logcat output, and we can see:  
+Then check the Logcat output, and we can see:  
 ......  
 03-15 09:55:25.768 ?6172 ?6172 E BufferOpenMaxPlayer: Created instance of BufferOpenMaxPlayer  
 03-15 09:55:25.840 ?2787 ?2968 E BufferQueueProducer: [com.dolby.ds/com.dolby.ds.playercontroller.TestPlayerActivity] connect: already connected (cur=1 req=1)  
