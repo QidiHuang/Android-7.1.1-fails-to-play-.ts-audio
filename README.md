@@ -6,7 +6,7 @@ Steps to reproduce .ts audio playback failure bug:
 3. launch "Integration Test" APP on Android 7.1.1
 4. click Audio(OpenMAX-AL Buffer Player) -> 2 channel DD audio(TS)
 
-Check the Logcat output, and we can see:
+Check the Logcat output, and we can see:  
 ......  
 03-15 09:55:25.768 ?6172 ?6172 E BufferOpenMaxPlayer: Created instance of BufferOpenMaxPlayer  
 03-15 09:55:25.840 ?2787 ?2968 E BufferQueueProducer: [com.dolby.ds/com.dolby.ds.playercontroller.TestPlayerActivity] connect: already connected (cur=1 req=1)  
